@@ -3,6 +3,7 @@
   gather_facts: no
   sudo: no
   roles:
+    - java
     - homebrew
     - homebrew-cask
   vars:
