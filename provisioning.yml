@@ -3,7 +3,7 @@
   gather_facts: no
   sudo: no
   roles:
-    - williamyeh.oracle-java
+    - java
     - homebrew
     - homebrew-cask
   vars:
@@ -17,7 +17,6 @@
       - caskroom/cask
       - homebrew/versions
       - wercker/wercker
-
     # Managed Homebrew packages.
     #
     # e.g.
@@ -75,11 +74,9 @@
       - wercker-cli
       - wget
       - xz
-
     # Tap external Homebrew Cask repositories.
     homebrew_cask_repositories:
       - caskroom/cask
-
     # Managed Homebrew Cask packages.
     #
     # e.g.
@@ -102,6 +99,7 @@
       - phpstorm
       - skype
       - slack
+      - spectacle
       - totalfinder
       - vagrant
       - virtualbox
