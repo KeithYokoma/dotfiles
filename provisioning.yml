@@ -1,0 +1,101 @@
+- hosts: localhost
+  connection: local
+  gather_facts: no
+  sudo: no
+  roles:
+    - homebrew
+    - homebrew-cask
+  vars:
+    # Tap external Homebrew repositories.
+    #
+    # e.g.
+    # - homebrew/binary
+    homebrew_repositories:
+      - homebrew/binary
+      - caskroom/cask
+
+    # Managed Homebrew packages.
+    #
+    # e.g.
+    # - package_name
+    # or
+    # { name: package_name, state: package_state, install_options: [with-baz, enable-debug] }
+    #
+    # state choices: [head, latest, present, absent, linked, unlinked] (default latest)
+    # install_options: string or sequence (default none)
+    homebrew_packages:
+      - ag
+      - ansible
+      - ant
+      - autoconf
+      - automake
+      - bash-completion
+      - cmake
+      - cocoapods
+      - cowsay
+      - curl
+      - dex2jar
+      - docker
+      - docker-machine
+      - gcc48
+      - git
+      - gnu-smalltalk
+      - gnupg
+      - go
+      - gpg
+      - graphviz
+      - hub
+      - hugo
+      - jad
+      - mysql
+      - nkf
+      - node
+      - openssl
+      - { name: openssl, state: linked, install_options: force }
+      - pidcat
+      - pkg-config
+      - pyenv
+      - python
+      - rbenv
+      - readline
+      - redis
+      - redpen
+      - ruby
+      - sbt
+      - scala
+      - tree
+      - typesafe-activator
+      - vim
+      - watchman
+      - wercker-cli
+      - wget
+      - xz
+
+    # Tap external Homebrew Cask repositories.
+    homebrew_cask_repositories:
+
+    # Managed Homebrew Cask packages.
+    #
+    # e.g.
+    # - package_name
+    # or
+    # { name: package_name, state: package_state }
+    #
+    # state choices: [present, absent, installed, uninstalled] (default present)
+    homebrew_cask_packages:
+      - adobe-reader
+      - alfred
+      - android-studio
+      - atom
+      - dropbox
+      - genymotion
+      - google-chrome
+      - google-japanese-ime
+      - intellij-idea
+      - java
+      - phpstorm
+      - skype
+      - slack
+      - totalfinder
+      - vagrant
+      - virtualbox
