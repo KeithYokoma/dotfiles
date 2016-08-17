@@ -7,7 +7,8 @@
     - homebrew
     - homebrew-cask
   vars:
-    java_version: 8
+    home_directory: /Users/{{ ansible_user_id }}
+    downloads_directory: /{{ home_directory }}/.ansible/downloads
     # Tap external Homebrew repositories.
     #
     # e.g.
