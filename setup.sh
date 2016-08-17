@@ -21,4 +21,4 @@ source ~/.bash_profile
 echo "› set up ansible provisioning"
 mkdir ~/.provisioning && cd $_
 git clone https://github.com/KeithYokoma/dotfiles.git
-ansible-playbook -i hosts -vv provisioning.yml
+ansible-playbook -i dotfiles/hosts -vv dotfiles/provisioning.yml
