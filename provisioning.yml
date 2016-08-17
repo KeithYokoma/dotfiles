@@ -3,10 +3,11 @@
   gather_facts: no
   sudo: no
   roles:
-    - java
+    - williamyeh.oracle-java
     - homebrew
     - homebrew-cask
   vars:
+    java_version: 8
     # Tap external Homebrew repositories.
     #
     # e.g.

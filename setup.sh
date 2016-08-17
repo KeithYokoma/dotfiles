@@ -21,4 +21,5 @@ source ~/.bash_profile
 echo "› set up ansible provisioning"
 mkdir ~/.provisioning && cd $_
 git clone https://github.com/KeithYokoma/dotfiles.git
+ansible-galaxy install williamyeh.oracle-java
 ansible-playbook -i dotfiles/hosts -vv dotfiles/provisioning.yml
