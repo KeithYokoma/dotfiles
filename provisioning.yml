@@ -13,6 +13,8 @@
     homebrew_repositories:
       - homebrew/binary
       - caskroom/cask
+      - homebrew/versions
+      - wercker/wercker
 
     # Managed Homebrew packages.
     #
@@ -30,6 +32,7 @@
       - autoconf
       - automake
       - bash-completion
+      - brew-cask
       - cmake
       - cocoapods
       - cowsay
@@ -73,6 +76,7 @@
 
     # Tap external Homebrew Cask repositories.
     homebrew_cask_repositories:
+      - caskroom/cask
 
     # Managed Homebrew Cask packages.
     #
