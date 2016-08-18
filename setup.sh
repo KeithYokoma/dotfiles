@@ -27,3 +27,7 @@ echo "›› install git prompt support"
 cd
 curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh > .git-prompt.sh
 chmod +x .git-prompt.sh
+
+echo "›› install gitconfig"
+cp ~/.provisioning/dotfiles/gitconfig ~/.gitconfig
+
