@@ -22,3 +22,8 @@ echo "› set up ansible provisioning"
 mkdir ~/.provisioning && cd $_
 git clone https://github.com/KeithYokoma/dotfiles.git
 ansible-playbook -i dotfiles/hosts -vv dotfiles/provisioning.yml
+
+echo "›› install git prompt support"
+cd
+curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh > .git-prompt.sh
+chmod +x .git-prompt.sh
