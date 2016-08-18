@@ -31,3 +31,6 @@ chmod +x .git-prompt.sh
 echo "›› install gitconfig"
 cp ~/.provisioning/dotfiles/gitconfig ~/.gitconfig
 
+echo "›› install vimrc"
+cp ~/.provisioning/dotfiles/vimrc ~/.vimrc
+

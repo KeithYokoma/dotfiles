@@ -1,0 +1,25 @@
+set number
+set ruler
+set list
+set incsearch
+set hlsearch
+set nowrap
+set ignorecase
+set showmatch
+set history=2000
+set hidden
+set autoindent
+set expandtab
+set tabstop=2
+set shiftwidth=2
+set encoding=utf8
+set fileencoding=utf8
+set showcmd
+set autoread
+set listchars=tab:>-,trail:-,nbsp:%,extends:>,precedes:<,eol:<
+set cursorline
+set backspace=indent,eol,start
+set whichwrap=b,s,h,s,<,>,[,]
+set laststatus=2
+set statusline=%<%f\ #%n%m%r%h%w%{'['.(&fenc!=''?&fenc:&enc).']['.&ff.']'}%y%=%l,%c%V%8P
+syntax on
