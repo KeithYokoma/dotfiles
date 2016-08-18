@@ -3,12 +3,9 @@
   gather_facts: no
   sudo: no
   roles:
-    - java
     - homebrew
     - homebrew-cask
   vars:
-    home_directory: /Users/{{ ansible_user_id }}
-    downloads_directory: /{{ home_directory }}/.ansible/downloads
     # Tap external Homebrew repositories.
     #
     # e.g.
