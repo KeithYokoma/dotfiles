@@ -32,8 +32,10 @@
       - automake
       - bash-completion
       - brew-cask
+      - carthage
       - cmake
       - cocoapods
+      - coreutils
       - cowsay
       - curl
       - dex2jar
@@ -65,6 +67,7 @@
       - ruby
       - sbt
       - scala
+      - swiftlint
       - tree
       - typesafe-activator
       - vim
