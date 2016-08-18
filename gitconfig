@@ -1,0 +1,11 @@
+[user]
+	name = KeithYokoma
+	email = Keith.Yokoma@gmail.com
+[alias]
+	co = checkout
+	ci = commit
+	st = status
+	rpull = pull --rebase
+  today = "!sh -c 'git log --reverse --no-merges --branches=* --date=local --since=midnight --oneline --author=\"`git config --get user.name`\"'"
+[color]
+	ui = auto
