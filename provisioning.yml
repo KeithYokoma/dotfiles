@@ -78,6 +78,7 @@
     # Tap external Homebrew Cask repositories.
     homebrew_cask_repositories:
       - caskroom/cask
+      - caskroom/versions
     # Managed Homebrew Cask packages.
     #
     # e.g.
@@ -97,6 +98,8 @@
       - google-japanese-ime
       - intellij-idea
       - java
+      - java7
+      - mactex
       - phpstorm
       - skype
       - slack

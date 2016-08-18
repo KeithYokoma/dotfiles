@@ -22,6 +22,7 @@ echo "› set up ansible provisioning"
 mkdir ~/.provisioning && cd $_
 git clone https://github.com/KeithYokoma/dotfiles.git
 ansible-playbook -i dotfiles/hosts -vv dotfiles/provisioning.yml
+sudo tlmgr update --self --all
 
 echo "›› install git prompt support"
 cd
