@@ -41,6 +41,7 @@
       - dex2jar
       - docker
       - docker-machine
+      - docker-compose
       - gcc48
       - git
       - gnu-smalltalk
@@ -96,6 +97,7 @@
       - genymotion
       - google-chrome
       - google-japanese-ime
+      - imageoptim
       - intellij-idea
       - java
       - java7
